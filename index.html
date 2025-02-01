@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmy Wiatrowe - Energia Odnawialna</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #ffffff; /* Zmieniono tło na białe */
+            overflow-x: hidden;
+        }
+        header {
+            background: #4CAF50 url('https://balticwind.eu/wp-content/uploads/2021/08/CF-Offshore-G20.jpg'
+        ) no-repeat center center;
+            background-size: cover;
+            color: white;
+            padding: 6rem 0; 
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+        nav {
+            background: #333;
+            color: white;
+            display: flex;
+            justify-content: center;
+            padding: 0.5rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            animation: slideInDown 1s ease-in-out;
+        }
+        nav a {
+            color: white;
+            margin: 0 1rem;
+            text-decoration: none;
+            transition: color 0.3s ease-in-out;
+        }
+        nav a:hover {
+            text-decoration: underline;
+            color: #4CAF50;
+        }
+        section {
+            padding: 2rem;
+            animation: fadeInUp 1.5s ease-in-out;
+        }
+        section img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto 2rem;
+            opacity: 0;
+            animation: fadeIn 2s ease-in-out forwards;
+        }
+        footer {
+            background: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-100%);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Transition effects */
+        ul li {
+            position: relative;
+            opacity: 0;
+            animation: fadeInUp 1s ease-in-out forwards;
+        }
+        ul li:nth-child(1) { animation-delay: 0.2s; }
+        ul li:nth-child(2) { animation-delay: 0.4s; }
+        ul li:nth-child(3) { animation-delay: 0.6s; }
+        ul li:nth-child(4) { animation-delay: 0.8s; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Farmy Wiatrowe - Energia Przyszłości</h1>
+    </header>
+    <nav>
+        <a href="#rodzaje">Rodzaje</a>
+        <a href="#budowa">Budowa</a>
+        <a href="#dzialanie">Zasada Działania</a>
+        <a href="#zalety">Zalety</a>
+        <a href="#oze">OZE</a>
+    </nav>
+    <section id="rodzaje">
+        <h2>Rodzaje Farm Wiatrowych</h2>
+        <p>Farmy wiatrowe dzielimy na:</p>
+        <ul>
+            <li><strong>Farmy lądowe:</strong> Umieszczane na lądzie, często w miejscach o dużym potencjale wiatrowym. Są łatwiejsze do zbudowania i utrzymania, ale mogą być mniej efektywne ze względu na zmienne warunki wiatrowe.</li>
+            <li><strong>Farmy morskie:</strong> Zlokalizowane na wodach przybrzeżnych, gdzie wiatry są silniejsze i bardziej stabilne. Budowa i utrzymanie są bardziej kosztowne, ale farmy te mogą generować więcej energii.</li>
+        </ul>
+    </section>
+    <section id="budowa">
+        <h2>Budowa Farmy Wiatrowej</h2>
+        <p>Farmy wiatrowe składają się z turbin wiatrowych, które mają następujące elementy:</p>
+        <ul>
+            <li><strong>Wirnik:</strong> Zbudowany z łopat, które obracają się pod wpływem wiatru. Wirnik przekształca energię kinetyczną wiatru w energię mechaniczną.</li>
+            <li><strong>Gondola:</strong> Zawiera generator, przekładnię oraz inne elementy mechaniczne. Gondola jest zamontowana na szczycie masztu i obraca się, aby ustawić wirnik w kierunku wiatru.</li>
+            <li><strong>Maszt:</strong> Wysoka konstrukcja wspierająca gondolę i wirnik. Maszt podnosi wirnik na wysokość, gdzie wiatry są silniejsze i bardziej stabilne.</li>
+            <li><strong>Fundament:</strong> Stabilizuje turbinę w gruncie lub wodzie. Fundament musi być wystarczająco mocny, aby wytrzymać siły wiatru i ciężar turbiny.</li>
+        </ul>
+        <img src="https://instsani.pl/upload/image/ozewia18.jpg" alt="Schemat elektrowni wiatrowej">
+    </section>
+    <section id="dzialanie">
+        <h2>Zasada Działania Turbin Wiatrowych</h2>
+        <p>Turbina wiatrowa działa na zasadzie przekształcania energii kinetycznej wiatru w energię elektryczną. Wirnik obraca się pod wpływem wiatru, co napędza generator, który wytwarza prąd elektryczny. Energia jest następnie przesyłana do sieci energetycznej.</p>
+        <p>Proces ten obejmuje kilka etapów:</p>
+        <ol>
+            <li>Wiatr obraca łopaty wirnika.</li>
+            <li>Wirnik napędza wał główny, który jest połączony z przekładnią.</li>
+            <li>Przekładnia zwiększa prędkość obrotową wału, co napędza generator.</li>
+            <li>Generator przekształca energię mechaniczną w energię elektryczną.</li>
+            <li>Energia elektryczna jest przesyłana do sieci energetycznej.</li>
+        </ol>
+    </section>
+    <section id="zalety">
+        <h2>Zalety Farm Wiatrowych</h2>
+        <ul>
+            <li>Odnawialne źródło energii, które nie wyczerpuje się z czasem. Energia wiatru jest dostępna w nieskończoność i nie powoduje zanieczyszczeń.</li>
+            <li>Redukcja emisji gazów cieplarnianych i ochrona środowiska. Farmy wiatrowe nie emitują dwutlenku węgla ani innych szkodliwych substancji.</li>
+            <li>Rozwój lokalnej gospodarki dzięki inwestycjom w infrastrukturę. Budowa i utrzymanie farm wiatrowych tworzy miejsca pracy i wspiera lokalne społeczności.</li>
+        </ul>
+    </section>
+    <section id="oze">
+        <h2>Odnawialne źródła Energii (OZE)</h2>
+        <p>OZE to przyszłość energetyki, która pozwala na zrównoważony rozwój i ochronę środowiska. Poza energią wiatru obejmuje:</p>
+        <ul>
+            <li><strong>Energia słoneczna:</strong> Wykorzystuje promieniowanie słoneczne do generowania energii elektrycznej za pomocą paneli fotowoltaicznych.</li>
+            <li><strong>Biomasa:</strong> Wykorzystuje materiały organiczne, takie jak drewno, odpady rolnicze i inne, do produkcji energii.</li>
+            <li><strong>Energia wodna:</strong> Wykorzystuje energię przepływu wody w rzekach i strumieniach do generowania energii elektrycznej za pomocą turbin wodnych.</li>
+            <li><strong>Geotermia:</strong> Wykorzystuje ciepło z wnętrza Ziemi do produkcji energii elektrycznej i ciepła.</li>
+        </ul>
+    </section>
+    <footer>
+        <p>&copy; 2025 Farmy Wiatrowe - Energia Przyszłości. Wszystkie prawa zastrzeżone.</p>
+    </footer>
+</body>
+</html>
